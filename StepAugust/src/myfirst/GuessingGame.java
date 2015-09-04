@@ -14,7 +14,7 @@ public class GuessingGame {
 		
 		for(int i=0; i<3; i++)
 		{
-			System.out.println("Enter a Guess");
+			System.out.print("Enter a Guess: ");
 			guess=input.nextDouble();
 			
 			if(randomnum==guess){
@@ -27,11 +27,15 @@ public class GuessingGame {
 			else if((randomnum==guess +1) || (randomnum==guess -1)){
 				System.out.println("Hot");}
 			
-			else System.out.println("Cold");
+			else 
+				System.out.println("Cold"/*+randomnum*/);
+			if (i==2 && guess != randomnum){
+				System.out.println("Wrong! You Lost the Game The Correct Answer is: "+randomnum);
+			}
 			
 			
 		}
-		System.out.println("Wrong! You Lost the Game The Correct Answer is: "+randomnum);
+		
 
 	}
 

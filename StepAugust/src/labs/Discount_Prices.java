@@ -13,16 +13,12 @@ public class Discount_Prices {
 		double percent= amount * 0.10;
 		double discount= amount - percent;
 	
-		if (amount >= 10) {
+		if (amount >= 1000) {
 			System.out.println("Discounted price: " +discount);
 			}
 
-			else System.out.println("Your price is: " +amount); 
-		}
-		
-
-	
+			else System.out.println("Your price is: " +amount);
 
 	}
-
+}
 
